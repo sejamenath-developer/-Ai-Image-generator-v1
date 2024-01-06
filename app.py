@@ -20,7 +20,7 @@ def generate():
     }
 
     # Make a request to your AI service API endpoint
-    response = requests.post("https://your_api_endpoint.com", headers=headers, json={'inputs': user_prompt})
+    response = requests.post("https://api-inference.huggingface.co/models/dataautogpt3/OpenDalle", headers=headers, json={'inputs': user_prompt})
 
     if response.ok:
         # Process the response or get image URLs
