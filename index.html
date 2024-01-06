@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLASH /AI</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Assuming CSS file is separate -->
+</head>
+<body>
+
+<div class="container">
+    <h1 class="title">NURO AI</h1>
+    
+    <form action="" class="gen-form">
+        <div class="input-container">
+            <input type="text" id="user-prompt" placeholder="Enter your prompt here..." autocomplete="off">
+        </div>
+        <button type="button" id="generate"><b>Generate</b></button>
+    </form>
+
+    <div class="result">
+        <div id="loading">
+            <h5>Generating...</h5>
+        </div>
+        <div id="image-grid"></div>
+    </div>
+</div>
+
+<script>
+    // JavaScript code remains unchanged
+</script>
+
+</body>
+</html>
+<style>
+  body {
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 2rem;
+    color: #333;
+}
+
+.gen-form {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#user-prompt {
+    border: none;
+    background-color: transparent;
+    width: 250px;
+    height: 40px;
+    padding: 5px 15px;
+}
+
+#generate {
+    margin-left: 10px;
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#generate:hover {
+    background-color: #333;
+}
+
+.result {
+    margin-top: 20px;
+}
+
+#loading {
+    display: none;
+    font-size: 1.2rem;
+    color: #333;
+    padding: 10px;
+    border-radius: 20px;
+    background: linear-gradient(to right, transparent 20%, transparent 40%, #ddd 50%, #ddd 55%, transparent 70%, transparent 100%);
+    background-size: 200% auto;
+    animation: shine 0.5s linear infinite;
+}
+
+#image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Shimmer effect animation */
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}
+
+</style>
