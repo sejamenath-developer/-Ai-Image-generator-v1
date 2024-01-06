@@ -12,7 +12,7 @@ def index():
 @app.route('/generate', methods=['POST'])
 def generate():
     user_prompt = request.form['user_prompt']
-    api_key = os.environ.get('API_KEY')  # Access your API key stored in environment variables
+    api_key = os.environ.get('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')  # Access your API key stored in environment variables
 
     headers = {
         'Content-Type': 'application/json',
